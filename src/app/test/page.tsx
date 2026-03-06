@@ -69,6 +69,30 @@ const questions = [
     question: "Penses-tu vraiment que la veste d'exorciste d'Hady a coûté 103 euros ?",
     reponses: ["Oui", "Non"],
   },
+  {
+    question: "Penses-tu que Khalid et Célia formeraient un beau couple ?",
+    reponses: ["Oui", "Non"],
+  },
+  {
+    question: "Penses-tu que Célia préfère Manoé à Khalid ?",
+    reponses: ["Oui", "Non"],
+  },
+  {
+    question: "Penses-tu que Célia a plus de bodycount que Khalid ?",
+    reponses: ["Oui", "Non"],
+  },
+  {
+    question: "Penses-tu que Perrine fait vraiment du 44 en taille de pied ?",
+    reponses: ["Oui", "Non"],
+  },
+  {
+    question: "Penses-tu que Manoé a vraiment un BBL issue de Dubaï ?",
+    reponses: ["Oui", "Non"],
+  },
+  {
+    question: "Penses-tu que Meissa a un passé douteux ?",
+    reponses: ["Oui", "Non"],
+  },
 ];
 
 function getResultEmoji(score: number, total: number) {
