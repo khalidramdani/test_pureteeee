@@ -1,0 +1,261 @@
+/* [project]/Desktop/test_purete/src/app/page.module.css [app-client] (css) */
+.page-module__ItZISa__page {
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e) 0 0 / 400% 400%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  min-height: 100vh;
+  padding: 20px;
+  animation: 12s infinite page-module__ItZISa__gradientShift;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+@keyframes page-module__ItZISa__gradientShift {
+  0% {
+    background-position: 0%;
+  }
+
+  50% {
+    background-position: 100%;
+  }
+
+  100% {
+    background-position: 0%;
+  }
+}
+
+.page-module__ItZISa__shape1, .page-module__ItZISa__shape2, .page-module__ItZISa__shape3 {
+  filter: blur(100px);
+  opacity: .3;
+  pointer-events: none;
+  z-index: 0;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.page-module__ItZISa__shape1 {
+  background: #7b2ff7;
+  width: 500px;
+  height: 500px;
+  animation: 8s ease-in-out infinite page-module__ItZISa__float1;
+  top: -15%;
+  left: -10%;
+}
+
+.page-module__ItZISa__shape2 {
+  background: #ff6ec7;
+  width: 350px;
+  height: 350px;
+  animation: 10s ease-in-out infinite page-module__ItZISa__float2;
+  bottom: -10%;
+  right: -5%;
+}
+
+.page-module__ItZISa__shape3 {
+  background: #00c851;
+  width: 250px;
+  height: 250px;
+  animation: 12s ease-in-out infinite page-module__ItZISa__float3;
+  top: 50%;
+  right: 20%;
+}
+
+@keyframes page-module__ItZISa__float1 {
+  0%, 100% {
+    transform: translate(0);
+  }
+
+  50% {
+    transform: translate(60px, 40px);
+  }
+}
+
+@keyframes page-module__ItZISa__float2 {
+  0%, 100% {
+    transform: translate(0);
+  }
+
+  50% {
+    transform: translate(-50px, -30px);
+  }
+}
+
+@keyframes page-module__ItZISa__float3 {
+  0%, 100% {
+    transform: translate(0)scale(1);
+  }
+
+  50% {
+    transform: translate(-30px, 20px)scale(1.1);
+  }
+}
+
+.page-module__ItZISa__content {
+  z-index: 1;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  max-width: 520px;
+  animation: .8s cubic-bezier(.16, 1, .3, 1) both page-module__ItZISa__fadeUp;
+  display: flex;
+  position: relative;
+}
+
+@keyframes page-module__ItZISa__fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.page-module__ItZISa__badge {
+  color: #c471ed;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  background: #7b2ff733;
+  border: 1px solid #7b2ff766;
+  border-radius: 100px;
+  padding: 6px 16px;
+  font-size: .8rem;
+  font-weight: 700;
+  display: inline-block;
+}
+
+.page-module__ItZISa__title {
+  color: #fff;
+  letter-spacing: -.03em;
+  background: linear-gradient(135deg, #fff 40%, #c471ed);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-size: 3.5rem;
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.page-module__ItZISa__subtitle {
+  color: #ffffff8c;
+  max-width: 400px;
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+.page-module__ItZISa__subtitle em {
+  color: #ff6ec7;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.page-module__ItZISa__startBtn {
+  color: #fff;
+  cursor: pointer;
+  background: linear-gradient(135deg, #7b2ff7, #c471ed);
+  border-radius: 16px;
+  align-items: center;
+  gap: 10px;
+  margin-top: 8px;
+  padding: 16px 40px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all .3s cubic-bezier(.4, 0, .2, 1);
+  display: inline-flex;
+  box-shadow: 0 6px 30px #7b2ff766;
+}
+
+.page-module__ItZISa__startBtn:hover {
+  transform: translateY(-3px)scale(1.02);
+  box-shadow: 0 10px 40px #7b2ff799;
+}
+
+.page-module__ItZISa__startBtn:active {
+  transform: translateY(0)scale(.98);
+}
+
+.page-module__ItZISa__arrow {
+  transition: transform .3s;
+  display: inline-block;
+}
+
+.page-module__ItZISa__startBtn:hover .page-module__ItZISa__arrow {
+  transform: translateX(4px);
+}
+
+.page-module__ItZISa__stats {
+  -webkit-backdrop-filter: blur(16px);
+  background: #ffffff0a;
+  border: 1px solid #ffffff14;
+  border-radius: 16px;
+  align-items: center;
+  gap: 24px;
+  margin-top: 24px;
+  padding: 20px 32px;
+  display: flex;
+}
+
+.page-module__ItZISa__stat {
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  display: flex;
+}
+
+.page-module__ItZISa__statNumber {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+
+.page-module__ItZISa__statLabel {
+  color: #fff6;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  font-size: .75rem;
+  font-weight: 500;
+}
+
+.page-module__ItZISa__divider {
+  background: #ffffff1a;
+  width: 1px;
+  height: 32px;
+}
+
+.page-module__ItZISa__footer {
+  color: #fff3;
+  z-index: 1;
+  font-size: .8rem;
+  position: absolute;
+  bottom: 24px;
+}
+
+@media (max-width: 600px) {
+  .page-module__ItZISa__title {
+    font-size: 2.4rem;
+  }
+
+  .page-module__ItZISa__subtitle {
+    font-size: .95rem;
+  }
+
+  .page-module__ItZISa__startBtn {
+    padding: 14px 32px;
+    font-size: 1rem;
+  }
+
+  .page-module__ItZISa__stats {
+    gap: 16px;
+    padding: 16px 24px;
+  }
+}
+
+/*# sourceMappingURL=Desktop_test_purete_src_app_page_module_4eeaeea0.css.map*/

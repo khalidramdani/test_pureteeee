@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 18, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/khali/Desktop/test_purete/src/app/test/page.tsx"],"sourcesContent":["import styles from \"./page.module.css\";\r\n\r\nexport default function Test() {\r\n    \r\n}"],"names":[],"mappings":";;;;AAEe,SAAS,QAExB"}}]
+}
